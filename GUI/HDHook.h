@@ -1,0 +1,11 @@
+
+#if !defined(AFX_GUI_H__D3A3C911_A5E2_458D_80DC_E60AFDF9B0DC__INCLUDED_)
+#define AFX_GUI_H__D3A3C911_A5E2_458D_80DC_E60AFDF9B0DC__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+#include "resource.h"
+
+#endif // !defined(AFX_GUI_H__D3A3C911_A5E2_458D_80DC_E60AFDF9B0DC__INCLUDED_)

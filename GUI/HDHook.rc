@@ -1,0 +1,200 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_HDHOOK              ICON    DISCARDABLE     ".\\Resource\\GUI.ico"
+IDI_HOOKOFF             ICON    DISCARDABLE     ".\\Resource\\HookOff.ico"
+IDI_HOOKON              ICON    DISCARDABLE     ".\\Resource\\HookOn.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_HDHOOK MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "激活",                        IDM_HOOKON
+        MENUITEM "关闭",                        IDM_HOOKOFF
+        MENUITEM SEPARATOR
+        MENUITEM "设置",                        IDM_SETTING
+        MENUITEM "关于",                        IDM_ABOUT
+        MENUITEM "退出",                        IDM_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETTING DIALOG DISCARDABLE  0, 0, 190, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "硬盘序列号仿真工具 - 设置"
+FONT 6, "System"
+BEGIN
+    LTEXT           "原始序列号:",IDC_STATIC,10,39,43,8
+    EDITTEXT        IDC_OLDDISKSERIAL,61,37,118,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "仿真序列号:",IDC_STATIC,10,53,43,8
+    EDITTEXT        IDC_NEWDISKSERIAL,61,51,118,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "应用",IDC_APPLY,120,130,27,14
+    CONTROL         "10秒后自动退出（慎用!）",IDC_CHECKEND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,136,106,10
+    CONTROL         "开启费尔托斯特杀毒软件",IDC_CHECKRUN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,124,104,10
+    LTEXT           "原始模型号:",IDC_STATIC,10,67,43,8
+    EDITTEXT        IDC_OLDDISKMODEL,61,65,118,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "仿真模型号:",IDC_STATIC,10,81,43,8
+    EDITTEXT        IDC_NEWDISKMODEL,61,79,118,12,ES_AUTOHSCROLL
+    ICON            IDI_HDHOOK,IDC_MYICON,15,10,20,20
+    LTEXT           "胡泊  hupo@tju.edu.cn",IDC_STATIC,45,21,76,8
+    LTEXT           "硬盘序列号仿真工具",IDC_STATIC,45,9,73,8,SS_NOPREFIX
+    EDITTEXT        IDC_INCLUDEFILTER,61,93,118,12,ES_AUTOHSCROLL
+    LTEXT           "过滤进程名:",IDC_STATIC,10,95,43,8
+    EDITTEXT        IDC_EXCLUDEFILTER,61,107,118,12,ES_AUTOHSCROLL
+    LTEXT           "排除进程名:",IDC_STATIC,10,109,43,8
+    PUSHBUTTON      "取消",IDC_CANCEL,147,130,27,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 100
+//
+
+IDR_SYS                 100     DISCARDABLE     ".\\Resource\\HDHook.sys"
+IDR_VXD                 100     DISCARDABLE     ".\\Resource\\HDHook.vxd"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "硬盘序列号仿真工具\0"
+            VALUE "CompanyName", "胡泊\0"
+            VALUE "FileDescription", "硬盘序列号仿真工具\0"
+            VALUE "FileVersion", "2.0.0.0\0"
+            VALUE "InternalName", "HDHook\0"
+            VALUE "LegalCopyright", "胡泊 hupo@tju.edu.cn\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HDHook.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "硬盘序列号仿真工具\0"
+            VALUE "ProductVersion", "2.0.0.0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "Hard Disk Hooker"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

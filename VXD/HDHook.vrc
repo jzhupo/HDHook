@@ -1,0 +1,9 @@
+CompanyName	=	"胡泊" 
+FileDescription =	"硬盘序列号仿真工具"
+FileVersion	=	"2.00" 
+InternalName	=	"HDHook"
+LegalCopyright	= 	"胡泊 hupo@tju.edu.cn"
+OriginalFilename = 	"HDHook.vxd"
+ProductName	=	"Win9x驱动/VXD"
+ProductVersion	= 	"2.00"
+Translation	=	0x409, 0x4E4
